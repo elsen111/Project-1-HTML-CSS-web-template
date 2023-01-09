@@ -1,0 +1,64 @@
+/*UTILS */
+/* button classes */
+.btn-primary:hover {background-color: #103463; border-color: #103463;}
+.btn-transparent:hover {background-color: #ffffff4d;}
+.btn-dark:hover {background-color: #262626;}
+
+
+
+
+
+/* STYLING BODY */
+/* Header */
+#logo a:hover,
+.main-navbar__list__item > a:hover {
+    color: #ffffffb3;
+}
+
+.main-navbar__list__item > a:hover::before {width: 100%;}
+
+
+
+/* Benefits section */
+.benefits__card a:hover > i {
+    left: 6%;
+}
+
+
+
+/* Plans section */
+.plan__card:not(:nth-child(2)) > .inner__col-3:hover {
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.plan__card:nth-child(2) > .inner__col-3:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 15px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 6px 5px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+
+/* Testimonials section */
+.testimonial__card:hover > .inner__col-3 {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+
+
+/* Contact section */
+#form-area > form > *:not(button):focus {
+    border-color: #f0efef;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+
+
+/* Move to top icon */
+#move-to-top > .fa-circle-up:hover {opacity: 1;}
+
+
+
+/* Footer */
+#footer-section a:hover,
+#socials > a:hover > i {
+    color: #fff;
+}

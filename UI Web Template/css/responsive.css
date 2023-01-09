@@ -1,0 +1,470 @@
+/* For extra-large screen devices */
+@media only screen and (max-width: 1380px) {
+    /* Features section */
+    .f__content {
+        margin-right: 0;
+    }
+
+    .feature:nth-child(2) > .f__content {
+        padding-right: 0;
+        margin-left: 0;
+        padding-left: 12rem;
+    }
+}
+
+
+
+
+
+/* For large screen devices */
+@media only screen and (max-width: 1200px) {
+    /* Helper classes */
+    .container {
+        width: min(97%, 94.5rem);
+    }
+
+    .col-3 {width: min(33.33%, 37rem);}
+
+    .inner__col-3 {
+        width: 70%;
+        min-width: 29.5rem;
+    }
+
+
+
+    /* Get Starting section */
+    #get-starting__body img {
+        width: 94rem;
+    }
+
+
+
+    /* Contact section */
+    #contact > .container > * {
+        width: 45.5rem;
+    }
+}
+
+
+
+
+
+/* Medium screen devices */
+@media only screen and (max-width: 992px) {
+    /* Helper classes */
+    .container {
+        width: 75rem;
+    }
+
+    .col-3 {width: 100%;}
+
+    .inner__col-3 {
+        width: 70%;
+    }
+
+    .section-header {
+        width: 72.5rem !important;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .section-header > * {
+        width: 100% !important;
+        text-size-adjust: 100%;
+    }
+
+
+
+    /* Header */
+    #main-navbar {
+        width: 80%;
+    }
+
+
+
+    /* Introduction section */
+    #introduction > .container > * {
+        width: 94.3%;
+    }
+
+    #introduction  h1 {
+        font-size: 3.6rem;
+    }
+
+
+
+    /* Benefits section */
+    .benefits__card {
+        margin-bottom: 5.5rem;
+        padding: 3rem;
+    }
+
+
+
+    /* Features section */
+    .feature > div {
+        width: 72rem;
+        padding-left: 0;
+        padding-right: 0;
+        max-width: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .image {
+        margin-bottom: .8rem;
+    }
+
+    .feature:nth-child(2) > .f__content {
+        padding-left: 0;
+        order: 2;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+    /* Plans section */
+    .plan__cards__container {
+        flex-wrap: wrap;
+    }
+
+    .col-3.plan__card {
+        width: 72rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .col-3.plan__card:not(:last-child) {
+        margin-bottom: 3.2rem;
+    }
+
+    .plan__card > .inner__col-3 {
+        width: 100%;
+    }
+
+    .plan__price {
+        margin-bottom: 4.5rem;
+        margin-top: .7rem;
+    }
+
+    .plan__description__list {
+        width: 100%;
+        align-self: flex-start;
+        margin-bottom: 0;
+    }
+
+
+
+    /* Testimonials section */
+    .testimonial__card {
+        width: 49% !important;
+    }
+
+    .testimonial__card > .inner__col-3 {
+        width: 93%;
+    }
+
+    #testimonialCards__container {
+        margin-bottom: 2rem;
+    }
+
+
+    
+    /* Get Starting section */
+    #get-starting__body  img {
+        width: 72rem;
+    }
+
+    #get-starting__articles {
+        grid-template-columns: 1fr;
+    }
+
+
+
+    /* Joining section */
+    #joining > .container > *:not(:last-child) {
+        width: 72rem;
+    }
+
+
+
+    /* Contact section */
+    #contact > .container > * {
+        width: 72rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #info-section {
+        margin-top: 5rem;
+        align-self: flex-start;
+        padding: 0;
+    }
+}
+
+
+
+
+
+/* Small screen devices */
+@media  screen and (max-width: 768px) {
+    /* Helper classes */
+    .container {
+        width: 93.55%;
+    }
+
+    .col-3 {width: 100%;}
+
+    .section-header {
+        width: 100% !important;
+        padding-left: .7rem;
+        padding-right: .7rem;
+    }
+
+    .section-header > * {
+        width: 100% !important;
+    }
+
+    *.fs-50 {
+        font-size: 4rem;
+    }
+
+    *.fs-36 {
+        font-size: 2.4rem;
+    }
+
+    *.fs-62 {
+        font-size: 4.2rem;
+    }
+
+    *.py-112 {
+        padding: 6.4rem  0;
+    }
+
+    section  h3 {
+        line-height: 5.8rem !important;
+    }
+
+
+
+    /* Main header */
+    .main__header {
+        position: fixed;
+        background-color: #fff;
+        top: 0;
+        height: 5rem;
+        box-shadow: 1px 4px 19px 0px rgba(0,0,0,0.43);
+        -webkit-box-shadow: 1px 4px 19px 0px rgba(0,0,0,0.43);
+        -moz-box-shadow: 1px 4px 19px 0px rgba(0,0,0,0.43);
+    }
+
+    .main__header > .container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .main__header > .container > * {
+        padding: 0  1.5rem;
+    }
+
+    #logo.flex-container__default {
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    #logo > h1 > a {
+        color: #1a57a5;
+    }
+
+    #main-navbar {
+        background-color: #fff;
+        width: 1500px;
+        border-top: .1rem  solid  #dadada;
+    }
+
+    .display-visible {
+        display: block;
+    }
+
+    .display-unvisible {
+        display: none;
+    }
+
+    .fa-bars,
+    .fa-xmark {
+        cursor: pointer;
+        display: block;
+        color: #73767c;
+        font-size: 2.5rem;
+    }
+
+    .fa-xmark {
+        display: none;
+        margin-right: .3rem;
+    }
+
+    #main-navbar__list {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: .8rem  0;
+        width: 100%;
+    }
+
+    #main-navbar__list > li {
+        padding: .8rem  0;
+        margin: 0;
+    }
+
+    #main-navbar__list  a {
+        color: #73767c;
+    }
+
+
+
+    /* Benefits section */
+    .benefits__card {
+        padding: 2rem  0;
+        margin-bottom: 3rem;
+    }
+
+    .benefits__card__icon {
+        margin-bottom: 3rem;
+    }
+
+
+
+    /* Features section */
+    #features  .image {
+        width: 93.55%;
+        height: auto;
+        min-width: auto;
+        margin-bottom: 0;
+        margin-top: .8rem;
+    }
+
+    #feature:first-child  .image {
+        margin-top: 0;
+    }
+
+    .f__content {
+        padding: 0  1.5rem !important;
+    }
+
+
+
+    /* Plans section */
+    #plans__header {
+        padding: 0;
+        margin-bottom: 13rem;
+    }
+
+    .testimonial__card {
+        width: 100% !important;
+    }
+
+    .testimonial__card > .inner__col-3 {
+        width: 100%;
+        padding: 2rem;
+    }
+
+
+
+    /* Get Starting section */
+    #get-starting__header > h2 {
+        line-height: 5.8rem;
+    }
+
+    #get-starting__body  img {
+        width: 100%;
+    }
+
+    .get-starting__article {
+        padding: 0;
+    }
+
+
+
+    /* Joining section */
+    #joining {
+        padding-bottom: 7rem;
+    }
+
+    #joining   h3 {
+        margin: 1rem  0;
+    }
+
+    #joining > .container > *:not(:last-child) {
+        width: 100%;
+    }
+
+
+
+    /* Contact section */
+    #form-section {
+        padding: 1.5rem;
+    }
+
+
+
+    /* Move to top */
+    #move-to-top {
+        bottom: 1.5rem;
+        right: .5rem;
+    }
+
+
+
+    /* Footer section */
+    #footer__content {
+        width: 75%;
+    }
+}
+
+
+
+
+
+/* Extra-small screen devices */
+@media only screen and (max-width: 481px) {
+    /* Helper classes */
+    .inner__col-3 {
+        min-width: auto;
+    }
+
+
+
+    /* Introduction section */
+    #introduction  .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    #introduction  .btn:first-child {
+        margin-bottom: 1rem;
+    }
+
+
+
+    /* Joining section */
+    #joining > .container > *:last-child {
+        width: auto;
+    }
+
+
+
+    /* Move to top */
+    #move-to-top {
+        font-size: .8rem;
+        bottom: .5rem;
+    }
+
+
+
+    /* Footer section */
+    #footer-section > div {
+        width: 95%;
+    }
+}

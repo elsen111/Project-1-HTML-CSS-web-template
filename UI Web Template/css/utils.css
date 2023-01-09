@@ -1,0 +1,196 @@
+/* background color classes */
+.bg-primary {background-color: #1a57a5;}
+.bg-light {background-color: #d6e6f2;}
+.bg-white {background-color: #fff;}
+
+
+
+
+
+/* button classes */
+.btn {opacity: 1; color: #fff;}
+.btn-large {padding: 2rem  4rem;}
+.btn-small {padding: 1rem  4rem;}
+.btn-primary {background-color: #1a57a5; border: .2rem solid #1a57a5;}
+.btn-transparent {background-color: transparent; border: .2rem solid #ffffffb3;}
+.btn-dark {background-color: #000;}
+
+
+
+
+
+/* card classes */
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col-3 {width: min(33.33%, 39rem);}
+/* .col-3.testimonial__card {
+    width: max(33.33%, 31.5rem);
+} */
+.inner__col-3 {
+    width: 88%;
+    margin: 0  auto;
+    min-width: 30.1rem;
+ }
+
+
+
+
+
+/* container classes */
+.container {
+    /* width: 117.0rem; */
+    width: min(97%, 119.0rem);
+    height: 100%;
+    margin: 0 auto;
+}
+
+.flex-container__default {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+/* Display block (special for header menu list) */
+/* .display-visible {
+    display: block;
+} */
+
+
+
+
+
+/* Fade animation */
+.fade {animation: fade 1.5s ease-in-out forwards;}
+.moveTop {animation: toTop 1.5s ease-in-out forwards;}
+
+
+
+
+
+/* font/text formatting classes */
+.f-italic {font-style: italic;}
+.text-uppercase {text-transform: uppercase;}
+.text-capitalize {text-transform: capitalize;}
+
+
+
+
+
+/* font-weight classes */
+.fw-300 {font-weight: 300;}
+.fw-500 {font-weight: 500;}
+.fw-700 {font-weight: 700;}
+
+
+
+
+/* font size classes */
+.fs-14 {font-size: 1.4rem;}
+.fs-15 {font-size: 1.5rem;}
+.fs-16 {font-size: 1.6rem;}
+.fs-17 {font-size: 1.75rem;}
+.fs-18 {font-size: 1.8rem;}
+.fs-24 {font-size: 2.4rem;}
+.fs-26 {font-size: 2.6rem;}
+.fs-30 {font-size: 3.0rem;}
+.fs-36 {font-size: 3.6rem;}
+.fs-50 {font-size: 5.0rem;}
+.fs-54 {font-size: 5.4rem;}
+.fs-62 {font-size: 6.2rem;}
+
+
+
+
+
+/* Heading line */
+.heading-line {
+    position: relative;
+}
+
+.heading-line::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    width: 7.8rem;
+    height: .25rem;
+    background-color: #1a57a5;
+    transform: translateX(-50%);
+}
+
+
+
+
+
+/* images */
+img {display:inline-block; width: 100%;}
+
+
+
+
+
+/* padding classes */
+.pb-30 {padding-bottom: 3rem;}
+.ps-10 {padding-left: 1rem;}
+.ps-15 {padding-left: 1.5rem;}
+.ps-30 {padding-left: 3.0rem;}
+.py-25 {padding: 2.5rem  0;}
+.py-48 {padding: 4.8rem  0;}
+.py-112 {padding: 11.2rem  0;}
+.px-15 {padding: 0  1.5rem;}
+.px-45 {padding: 0  4.5rem;}
+.p-30 {padding: 3rem;}
+.p-40 {padding: 4rem;}
+
+
+
+
+
+/* Links */
+.link {text-decoration: none;}
+
+
+
+
+
+/* Lists */
+.list {list-style: none;}
+
+
+
+
+
+/* margin classes */
+.mt-20 {margin-top: 2rem;}
+.mb-10 {margin-bottom: 1rem;}
+.mb-15 {margin-bottom: 1.5rem;}
+.mb-30 {margin-bottom: 3rem;}
+.mb-40 {margin-bottom: 4rem;}
+.mb-50 {margin-bottom: 5.0rem;}
+.mb-100 {margin-bottom: 10.0rem;}
+.my-20 {margin: 2rem  0;}
+.mx-5 {margin: 0  .5rem;}
+.mx-15 {margin: 0  1.5rem;}
+
+
+
+
+
+/* text color classes */
+.text-primary {color: #1a57a5;}
+.text-white {color: #fff;}
+.text-gray {color: #73767c;}
+.text-lighter-gray {color: #b7becb;}
+.text-dark {color: #000;}

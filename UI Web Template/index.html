@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Title bar logo -->
+        <link rel="shortcut icon" href="./images/title-logo.jpg" type="image/x-icon">
+
+        <!-- Linking font-awesome library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Linking stylesheets -->
+        <link rel="stylesheet" href="./css/utils.css">
+        <link rel="stylesheet" href="./css/animation.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/responsive.css">
+        <link rel="stylesheet" href="./css/hover.css">
+
+        <title> uiCookies </title>
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="home" class="main__header">
+            <div class="container flex-container__default px-15">
+                <div id="logo" class="flex-container__default">
+                    <h1 class="fs-26 text-uppercase"><a class="text-white fw-700 link" href="#home"> Frame </a></h1>
+                    <div>
+                        <i onclick="showHideNavbar()" class="fa-solid fa-xmark"></i>
+                        <!-- <i class="fa-solid fa-xmark"></i> -->
+                    </div>
+                </div>
+                <div id="main-navbar" class="display-visible ">
+                    <nav class="flex-container__default">
+                        <ul id="main-navbar__list"  class="flex-container__default list">
+                            <li class="main-navbar__list__item mx-15"><a href="#home"  class="link text-uppercase text-white fs-15"> Home </a></li>
+                            <li class="main-navbar__list__item mx-15"><a href="#features"  class="link text-uppercase text-white fs-15"> Features </a></li>
+                            <li class="main-navbar__list__item mx-15"><a href="#plans"  class="link text-uppercase text-white fs-15"> Pricing </a></li>
+                            <li class="main-navbar__list__item mx-15"><a href="#testimonials"  class="link text-uppercase text-white fs-15"> Reviews </a></li>
+                            <li class="main-navbar__list__item mx-15"><a href="#contact"  class="link text-uppercase text-white fs-15"> Contact </a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- Main content -->
+        <main>
+            <!-- Introduction section -->
+            <section id="introduction">
+                <div class="container flex-container__default">
+                    <h1 class="fs-54 fw-500 text-white mb-40">uicookies.com Creates High Quality Bootstrap Template For <span class="f-italic"> Free </span></h1>
+                    <div class="buttons flex-container__default">
+                        <a href="#" class="link btn btn-large btn-primary text-capitalize fs-16 mx-5"> Get them now </a>
+                        <a href="#" class="link btn btn-large btn-transparent text-capitalize fs-16 mx-5"> See features </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Benefits section -->
+            <section id="benefits" class="py-112">
+                <div class="container flex-container__default row">
+                    <div class="benefits__card col-3 p-30 px-45 fade-element">
+                        <div class="benefits__card__icon mb-50">
+                            <i class="fa-solid fa-mobile-screen fa-7x text-primary"></i>
+                        </div>
+                        <h3 class="text-primary fs-24 text-capitalize fw-500 mt-20 mb-30"> Mobile optimize </h3>
+                        <p class="text-gray fs-16 mb-30">
+                            Far far away, behind the word mountains, far from the countries Vokalia 
+                            and Consonantia, there live the blind texts. Separated they live in 
+                            Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+                        </p>
+                        <a href="#" class="text-primary link fs-16 text-capitalize fw-500 mb-30"> Learn more <i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+
+                    <div class="benefits__card col-3 p-30 px-45 fade-element">
+                        <div class="benefits__card__icon mb-50">
+                            <i class="fa-solid fa-wallet fa-7x text-primary"></i>
+                        </div>
+                        <h3 class="text-primary fs-24 text-capitalize fw-500 mt-20 mb-30"> Increase revenue </h3>
+                        <p class="text-gray fs-16 mb-30">
+                            A small river named Duden flows by their place and supplies it with the 
+                            necessary regelialia. It is a paradisematic country, in which roasted parts 
+                            of sentences fly into your mouth.
+                        </p>
+                        <a href="#" class="text-primary link fs-16 text-capitalize fw-500 mb-30"> Learn more <i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+
+                    <div class="benefits__card col-3 p-30 px-45 fade-element">
+                        <div class="benefits__card__icon mb-50">
+                            <i class="fa-regular fa-lightbulb fa-7x text-primary"></i>
+                        </div>
+                        <h3 class="text-primary fs-24 text-capitalize fw-500 mt-20 mb-30"> Smart idea </h3>
+                        <p class="text-gray fs-16 mb-30">
+                            Even the all-powerful Pointing has no control about the blind texts it is an 
+                            almost unorthographic life One day however a small line of blind text by the 
+                            name of Lorem Ipsum decided to leave for the far World of Grammar.
+                        </p>
+                        <a href="#" class="text-primary link fs-16 text-capitalize fw-500 mb-30"> Learn more <i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features section -->
+            <section id="features" class="bg-light py-112 flex-container__default">
+                <header id="features__header" class="section-header px-15 mb-100 container">
+                    <h3 class="heading-line fs-50 text-dark fw-500 mt-20 mb-30 pb-30"> Features </h3>
+                    <p class="fs-16 text-gray mb-30">
+                        Even the all-powerful Pointing has no control about the blind 
+                        texts it is an almost unorthographic life One day however a small 
+                        line of blind text by the name of Lorem Ipsum decided to leave for 
+                        the far World of Grammar.
+                    </p>
+                </header>
+                <section id="features__content" class="flex-container__default">
+                    <div class="feature flex-container__default mb-100">
+                        <div class="image">
+                            <img class="moveTopElement" src="./images/chart1.jpg" alt="image about feature 1">
+                        </div>
+                        <div class="f__content">
+                            <h2 class="f__content__header fs-36 fw-500 text-primary mt-20 mb-30"> Big Benefits for Small Business </h2>
+                            <p class="f__content__text fs-16 text-gray mb-30">
+                                A small river named Duden flows by their place and supplies it with the necessary regelialia. 
+                                It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                            </p>
+                            <ul class="f__content__list list">
+                                <li class="fs-16 text-gray mb-10"><i class="fa-solid fa-check text-primary"></i><span> Pointing has no control </span></li>
+                                <li class="fs-16 text-gray mb-10"><i class="fa-solid fa-check text-primary"></i><span> A small river named Duden flows </span></li>
+                                <li class="fs-16 text-gray mb-10"><i class="fa-solid fa-check text-primary"></i><span> Roasted parts of sentences fly into your mouth </span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="feature flex-container__default mb-100">
+                        <div class="image">
+                            <img class="moveTopElement" src="./images/chart2.jpg" alt="image about feature 1">
+                        </div>
+                        <div class="f__content">
+                            <h2 class="f__content__header fs-36 fw-500 text-primary mt-20 mb-30"> How Frame is different </h2>
+                            <p class="f__content__text fs-16 text-gray mb-30">
+                                A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, 
+                                in which roasted parts of sentences fly into your mouth.
+                            </p>
+                            <ul class="f__content__list list">
+                                <li class="fs-16 text-gray mb-10"><i class="fa-solid fa-check text-primary"></i><span> Pointing has no control </span></li>
+                                <li class="fs-16 text-gray mb-10"><i class="fa-solid fa-check text-primary"></i><span> A small river named Duden flows </span></li>
+                                <li class="fs-16 text-gray mb-10"><i class="fa-solid fa-check text-primary"></i><span> Roasted parts of sentences fly into your mouth </span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="feature flex-container__default mb-100">
+                        <div class="image">
+                            <img class="moveTopElement" src="./images/chart3.jpg" alt="image about feature 1">
+                        </div>
+                        <div class="f__content">
+                            <h2 class="f__content__header fs-36 fw-500 text-primary mt-20 mb-30"> All in One Place </h2>
+                            <p class="f__content__text fs-16 text-gray text-gray mb-30">
+                                A small river named Duden flows by their place and supplies it with the necessary regelialia. 
+                                It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                            </p>
+                            <ul class="f__content__list list">
+                                <li class="fs-16 text-gray mb-10"><i class="fa-solid fa-check text-primary"></i> Pointing has no control </li>
+                                <li class="fs-16 text-gray mb-10"><i class="fa-solid fa-check text-primary"></i> A small river named Duden flows </li>
+                                <li class="fs-16 text-gray mb-10"><i class="fa-solid fa-check text-primary"></i> Roasted parts of sentences fly into your mouth </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <!-- Plans section -->
+            <section id="plans" class="py-112">
+                <div class="container flex_container_default">
+                    <header id="plans__header" class="section-header mb-100">
+                        <h3 class="heading-line fs-50 text-dark fw-500 mt-20 mb-30 pb-30"> Choose the plan that&apos;s right for your business </h3>
+                        <p class="fs-16 text-gray mb-30">
+                            Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day 
+                            however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
+                        </p>
+                    </header>
+
+                    <div class="plan__cards__container row mt-20 mb-30">
+                        <div class="plan__card col-3">
+                            <div class="inner__col-3 p-30">
+                                <header class="plan__card__header">
+                                    <h2 class="plan__type mt-20 fs-14 text-uppercase fw-500"> Starter </h2>
+                                    <p class="plan__price mb-30 fs-62 text-primary"><strong class="fw-500"> &dollar;22.99 </strong></p>
+                                </header>
+                                <div class="plan__card__body flex-container__default">
+                                    <p class="plan__description fs-14 f-italic mb-30">
+                                        This is a monthly recurring payment.
+                                    </p>
+                                    <ul class="plan__description__list list pb-30 mb-10">
+                                        <li class="fs-16 text-gray fw-500 mb-10"><i class="fa-solid fa-check text-primary"></i><span class="ps-10"> Pointing has no control </span></li>
+                                        <li class="fs-16 text-gray fw-500 mb-10"><i class="fa-solid fa-check text-primary"></i><span class="ps-10"> A small river named Duden flows </span></li>
+                                        <li class="fs-16 text-gray fw-500 mb-10"><i class="fa-solid fa-check text-primary"></i><span class="ps-10"> Roasted parts of sentences fly into your mouth </span></li>
+                                    </ul>
+                                    <div class="start__btn mt-20 mb-40">
+                                        <a href="#" class="link btn-small btn-dark text-capitalize fs-16 text-white"> Get started </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="plan__card col-3">
+                            <div class="inner__col-3 p-30">
+                                <header class="plan__card__header">
+                                    <h2 class="plan__type mt-20 fs-14 text-uppercase fw-500"> Business </h2>
+                                    <p class="plan__price mb-30 fs-62 text-primary"><strong class="fw-500"> &dollar;69.99 </strong></p>
+                                </header>
+                                <div class="plan__card__body flex-container__default">
+                                    <p class="plan__description fs-14 f-italic mb-30">
+                                        This is a monthly recurring payment.
+                                    </p>
+                                    <ul class="plan__description__list list pb-30 mb-10">
+                                        <li class="fs-16 text-gray fw-500 mb-10"><i class="fa-solid fa-check text-primary"></i><span class="ps-10"> Pointing has no control </span></li>
+                                        <li class="fs-16 text-gray fw-500 mb-10"><i class="fa-solid fa-check text-primary"></i><span class="ps-10"> A small river named Duden flows </span></li>
+                                        <li class="fs-16 text-gray fw-500 mb-10"><i class="fa-solid fa-check text-primary"></i><span class="ps-10"> Roasted parts of sentences fly into your mouth </span></li>
+                                    </ul>
+                                    <div class="start__btn mt-20 mb-40">
+                                        <a href="#" class="link btn-small btn-primary text-capitalize fs-16 text-white"> Get started </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="plan__card col-3">
+                            <div class="inner__col-3 p-30">
+                                <header class="plan__card__header">
+                                    <h2 class="plan__type mt-20 fs-14 text-uppercase fw-500"> Premium </h2>
+                                    <p class="plan__price mb-30 fs-62 text-primary"><strong class="fw-500"> &dollar;224.99 </strong></p>
+                                </header>
+                                <div class="plan__card__body flex-container__default">
+                                    <p class="plan__description fs-14 f-italic mb-30">
+                                        This is a monthly recurring payment.
+                                    </p>
+                                    <ul class="plan__description__list list pb-30 mb-10">
+                                        <li class="fs-16 text-gray fw-500 mb-10"><i class="fa-solid fa-check text-primary"></i><span class="ps-10"> Pointing has no control </span></li>
+                                        <li class="fs-16 text-gray fw-500 mb-10"><i class="fa-solid fa-check text-primary"></i><span class="ps-10"> A small river named Duden flows </span></li>
+                                        <li class="fs-16 text-gray fw-500 mb-10"><i class="fa-solid fa-check text-primary"></i><span class="ps-10"> Roasted parts of sentences fly into your mouth </span></li>
+                                    </ul>
+                                    <div class="start__btn mt-20 mb-40">
+                                        <a href="#" class="link btn-small btn-dark text-capitalize fs-16 text-white"> Get started </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials section -->
+            <section id="testimonials" class="bg-light py-112">
+                <div class="container flex-container__default">
+                    <header id="testimonials__header" class="section-header mb-100">
+                        <h3 class="heading-line fs-50 text-dark fw-500 mt-20 mb-30 pb-30"> That&apos;s why 100,000+ Love Frame </h3>
+                        <p class="fs-16 text-gray mb-30">
+                            Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day 
+                            however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
+                        </p>
+                    </header>
+
+                    <div id="testimonialCards__container" class="flex-container__default row mb-10">
+                        <div class="testimonial__card col-3">
+                            <div class="inner__col-3 p-30 bg-white">
+                                <header class="testimonial__card__header">
+                                    <div class="profile-photo mb-30">
+                                        <img src="./images/testimonial1.jpg" alt="person 1">
+                                    </div>
+                                    <div class="stars mb-10">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </header>
+                                <section class="testimonial__card__body">
+                                    <p class="comment fs-17 f-italic text-dark fw-500 mt-20">
+                                        Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One 
+                                        day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
+                                    </p>
+                                </section>
+                                <footer>
+                                    <address class="comment__author fs-16 fw-500 text-gray">
+                                        — Garry Alexander
+                                    </address>
+                                </footer>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card col-3">
+                            <div class="inner__col-3 p-30 bg-white">
+                                <header class="testimonial__card__header">
+                                    <div class="profile-photo mb-30">
+                                        <img src="./images/testimonial2.jpg" alt="person 1">
+                                    </div>
+                                    <div class="stars mb-10">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </header>
+                                <section class="testimonial__card__body">
+                                    <p class="comment fs-17 f-italic text-dark fw-500 mt-20">
+                                        A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a 
+                                        paradisematic country, in which roasted parts of sentences fly into your mouth.
+                                    </p>
+                                </section>
+                                <footer>
+                                    <address class="comment__author fs-16 fw-500 text-gray">
+                                        — James Robertson
+                                    </address>
+                                </footer>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card col-3">
+                            <div class="inner__col-3 p-30 bg-white">
+                                <header class="testimonial__card__header">
+                                    <div class="profile-photo mb-30">
+                                        <img src="./images/testimonial3.jpg" alt="person 1">
+                                    </div>
+                                    <div class="stars mb-10">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </header>
+                                <section class="testimonial__card__body">
+                                    <p class="comment fs-17 f-italic text-dark fw-500 mt-20">
+                                        Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One 
+                                        day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
+                                    </p>
+                                </section>
+                                <footer>
+                                    <address class="comment__author fs-16 fw-500 text-gray">
+                                        — Ben Goodrich
+                                    </address>
+                                </footer>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card col-3">
+                            <div class="inner__col-3 p-30 bg-white">
+                                <header class="testimonial__card__header">
+                                    <div class="profile-photo mb-30">
+                                        <img src="./images/testimonial4.jpg" alt="person 1">
+                                    </div>
+                                    <div class="stars mb-10">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </header>
+                                <section class="testimonial__card__body">
+                                    <p class="comment fs-17 f-italic text-dark fw-500 mt-20">
+                                        And if she hasn&apos;t been rewritten, then they are still using her.
+                                    </p>
+                                </section>
+                                <footer>
+                                    <address class="comment__author fs-16 fw-500 text-gray">
+                                        — Kip Hugh
+                                    </address>
+                                </footer>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card col-3">
+                            <div class="inner__col-3 p-30 bg-white">
+                                <header class="testimonial__card__header">
+                                    <div class="profile-photo mb-30">
+                                        <img src="./images/testimonial5.jpg" alt="person 1">
+                                    </div>
+                                    <div class="stars mb-10">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </header>
+                                <section class="testimonial__card__body">
+                                    <p class="comment fs-17 f-italic text-dark fw-500 mt-20">
+                                        A small river named Duden flows by their place and supplies it with the necessary regelialia. 
+                                        It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                                    </p>
+                                </section>
+                                <footer>
+                                    <address class="comment__author fs-16 fw-500 text-gray">
+                                        — James Robertson
+                                    </address>
+                                </footer>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card col-3">
+                            <div class="inner__col-3 p-30 bg-white">
+                                <header class="testimonial__card__header">
+                                    <div class="profile-photo mb-30">
+                                        <img src="./images/testimonial6.jpg" alt="person 1">
+                                    </div>
+                                    <div class="stars mb-10">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </header>
+                                <section class="testimonial__card__body">
+                                    <p class="comment fs-17 f-italic text-dark fw-500 mt-20">
+                                        Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One 
+                                        day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
+                                    </p>
+                                </section>
+                                <footer>
+                                    <address class="comment__author fs-16 fw-500 text-gray">
+                                        — Ben Goodrich
+                                    </address>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Get Starting section -->
+            <section id="get-starting" class="py-112">
+                <div class="container flex_container_default">
+                    <header id="get-starting__header" class="section-header mb-30">
+                        <h2 class="fs-50 text-dark fw-500 text-capitalize mt-20 mb-30 pb-30 heading-line"> Try it today </h2>
+                        <p class="fs-16 text-gray mb-40">
+                            Even the all-powerful Pointing has no control about the blind texts 
+                            it is an almost unorthographic life One day however a small line of blind text by the name of Lorem 
+                            Ipsum decided to leave for the far World of Grammar.
+                        </p>
+                        <div class="mb-100 pb-30">
+                            <a href="#" class="link btn-small btn-primary text-white text-capitalize fs-16"> Get it now </a>
+                        </div>
+                    </header>
+                    <section id="get-starting__body">
+                        <div>
+                            <img src="./images/laptop_1.jpg" alt="image about get starting section">
+                        </div>
+
+                        <section id="get-starting__articles">
+                            <article class="get-starting__article px-15">
+                                <h6 class="fs-18 text-dark fw-500 mt-20 mb-30"><i class="fa-solid fa-check text-primary"></i> What is Instant? </h6>
+                                <p class="get-starting__article__text fs-16 text-gray mb-30">
+                                    Even the all-powerful Pointing has no control about the blind texts it is an 
+                                    almost unorthographic life One day however a small line of blind text by the 
+                                    name of Lorem Ipsum decided to leave for the far World of Grammar.
+                                </p>
+                            </article>
+
+                            <article class="get-starting__article px-15">
+                                <h6 class="fs-18 text-dark fw-500 mt-20 mb-30"><i class="fa-solid fa-check text-primary"></i> Is this available to my country? </h6>
+                                <p class="get-starting__article__text fs-16 text-gray mb-30">
+                                    The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, 
+                                    but the Little Blind Text didn&apos;t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.
+                                </p>
+                            </article>
+
+                            <article class="get-starting__article px-15">
+                                <h6 class="fs-18 text-dark fw-500 mt-20 mb-30"><i class="fa-solid fa-check text-primary"></i> How do I use the new features of Frame App? </h6>
+                                <p class="get-starting__article__text fs-16 text-gray mb-30">
+                                    On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times 
+                                    and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country.
+                                </p>
+                            </article>
+
+                            <article class="get-starting__article px-15">
+                                <h6 class="fs-18 text-dark fw-500 mt-20 mb-30"><i class="fa-solid fa-check text-primary"></i> I have technical problem who do I email? </h6>
+                                <p class="get-starting__article__text fs-16 text-gray mb-30">
+                                    But nothing the copy said could convince her and so it didn&apos;t take long until a few insidious Copy Writers ambushed her, made her 
+                                    drunk with Longe and Parole and dragged her into their agency, where they abused her for their.
+                                </p>
+                            </article>
+                        </section>
+                    </section>
+                </div>
+            </section>
+
+            <!-- Joining section -->
+            <section id="joining" class="bg-primary py-48">
+                <div class="container">
+                    <h3 class="fs-30 text-white fw-500 text-capitalize my-20"> Join With Over 100K Members </h3>
+                    <p class="fs-16 mb-40">
+                        But nothing the copy said could convince her and so it didn&apos;t take long until 
+                        a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole 
+                        and dragged her into their agency, where they abused her for their.
+                    </p>
+                    <div>
+                        <a href="#" class="fs-16 link btn-small text-white text-capitalize btn-dark"> Get started </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact section -->
+            <section id="contact" class="py-112 bg-light">
+                <div class="container flex-container__default">
+                    <section id="form-section" class="bg-white p-40">
+                        <header id="form-section__header">
+                            <h4 class="fs-30 text-dark text-capitalize fw-500 mb-30"> Get in touch </h4>
+                        </header>
+                        <section id="form-area">
+                            <form action="example.php" method="post">
+                                <input type="text" name="Name" id="name" placeholder="Your Name" required class="fs-14 mb-15 text-gray">
+                                <input type="email" name="Email" id="email" placeholder="Your Email" required class="fs-14 mb-15 text-gray">
+                                <input type="tel" name="Phone_number" id="phone" placeholder="Your Phone" required class="fs-14 mb-15 text-gray">
+                                <textarea name="Message" id="message" placeholder="Write a Message" required class="fs-14 mb-15 text-gray"></textarea>
+                                <button type="submit" class="btn-small btn-primary fs-16 text-capitalize text-white"> Send message </button>
+                            </form>
+                        </section>
+                    </section>
+                    <section id="info-section" class="text-gray px-45">
+                        <div id="email" class="mb-30">
+                            <h5 class="fs-16 text-uppercase fw-500"> Email </h5>
+                            <address class="fs-16"> probootstrap@gmail.com </address>
+                        </div>
+
+                        <div id="email" class="mb-30">
+                            <h5 class="fs-16 text-uppercase fw-500"> Phone </h5>
+                            <address class="fs-16"> +30 976 1382 9921 </address>
+                        </div>
+
+                        <div id="email" class="mb-30">
+                            <h5 class="fs-16 text-uppercase fw-500"> Fax </h5>
+                            <address class="fs-16"> +30 976 1382 9922 </address>
+                        </div>
+
+                        <div id="email" class="mb-30">
+                            <h5 class="fs-16 text-uppercase fw-500"> Address </h5>
+                            <address class="fs-16"> San Francisco, CA </address>
+                            <address class="fs-16"> 4th Floor8 Lower </address>
+                            <address class="fs-16"> San Francisco street, M1 50F </address>
+                        </div>
+                    </section>
+                </div>
+            </section>
+
+            <!-- Icon to move the top of the website -->
+            <a href="#introduction" id="move-to-top">
+                <i class="fa-solid fa-circle-up fa-4x"></i>
+            </a>
+        </main>
+
+
+        <!-- Footer -->
+        <footer id="footer-section" class="py-48 bg-primary">
+            <div id="socials" class="mb-30">
+                <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <div id="footer__content" class="text-white">
+                <p class="fs-16"> &copy; 2019 Frame. All Rights Reserved. </p>
+                <p class="fs-16"> Designed &amp; 
+                    <a href="https://uicookies.com/bootstrap-html-templates/"  class="link fs-16"> Bootstrap templates </a> 
+                    by uiCookies </p>
+                <p class="fs-16"> 
+                    Demo Images by 
+                    <a href="https://unsplash.com/" class="link fs-16"> Unsplash </a> 
+                </p>
+            </div>
+        </footer>
+
+        <!-- Linking Javascript -->
+        <script src="./js/animation1.js"></script>
+        <script src="./js/animation2.js"></script>
+        <script src="./js/header_navbar.js"></script>
+    </body>
+</html>
